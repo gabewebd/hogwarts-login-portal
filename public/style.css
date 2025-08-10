@@ -296,6 +296,11 @@ input[type="submit"]:hover {
 /* Houses Section */
 .houses-section {
     margin: 25px 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .houses-container {
@@ -303,11 +308,6 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 15px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .house-item {
