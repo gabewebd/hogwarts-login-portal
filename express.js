@@ -53,7 +53,7 @@ app.get('/getStudent',(req, res) => {
                     <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                     <h1>Welcome Back, Student!</h1>
                     <p class="magical-text">Login Successful</p>
-                    <p>Welcome back to your Hogwarts student dashboard! You have successfully logged into your account and can now access all your magical academic resources.</p>
+                    <p>Welcome back to your Hogwarts student dashboard!</p>
                     <p class="spell-text">Your magical journey continues!</p>
                     
                     <div class="registration-details">
@@ -89,7 +89,7 @@ app.get('/getStudent',(req, res) => {
                     
                     <div class="error-details">
                         <h2>Missing Information</h2>
-                        <p>Please ensure you provide your Student ID, First Name, Last Name, and House to access the student portal.</p>
+                        <p>Please ensure you provide your Student ID, First Name, Last Name, and House.</p>
                     </div>
                     
                     <nav>
@@ -128,7 +128,7 @@ app.get('/getAdmin',(req, res) => {
                     <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                     <h1>Welcome Back, Admin!</h1>
                     <p class="magical-text">Faculty Login Successful</p>
-                    <p>Welcome back to your Hogwarts faculty dashboard! You have successfully accessed your admin account and can now manage your classes and students.</p>
+                    <p>Welcome back to your Hogwarts faculty dashboard!</p>
                     <p class="spell-text">Ready to inspire young magical minds!</p>
                     
                     <div class="registration-details">
@@ -164,7 +164,7 @@ app.get('/getAdmin',(req, res) => {
                     
                     <div class="error-details">
                         <h2>Missing Information</h2>
-                        <p>Please ensure you provide your Admin ID, First Name, Last Name, and House Affiliation to access the faculty portal.</p>
+                        <p>Please ensure you provide your Admin ID, First Name, Last Name, and House Affiliation.</p>
                     </div>
                     
                     <nav>
@@ -194,7 +194,7 @@ app.use((req, res, next) => {
                 <h1 class="error-404">404</h1>
                 <h2>Page Not Found!</h2>
                 <p class="magical-text">The magical page you seek does not exist</p>
-                <p>It seems you've wandered into the Room of Requirement, but this particular room hasn't been created yet. The page you're looking for cannot be found in our magical database.</p>
+                <p>The page you're looking for cannot be found in our magical database.</p>
                 <p class="spell-text">Perhaps it was hidden by a Disillusionment Charm?</p>
                 
                 <div class="error-details">
