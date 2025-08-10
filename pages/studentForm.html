@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Hogwarts Portal</title>
+    <link rel="stylesheet" href="/style.css"> 
+</head>
+<body>
+    <div class="magical-container">
+        <div class="form-header">
+            <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
+            <h1>Student Login</h1>
+            <p class="magical-text">Access your magical student account</p>
+            <p>Welcome back to Hogwarts School of Witchcraft and Wizardry! Please enter your student credentials to access your personalized dashboard, view your class schedules, house points, and magical progress.</p>
+            <nav style="margin-top: 30px;"><a href="/" class="magical-button">Return to Hogwarts Portal</a></nav>
+        </div>
+        
+        <div class="form-content">
+            <form action="/getStudent" method="GET">
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID" required />
+                
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required />
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required />
+                
+                <label for="house">House:</label>
+                <select id="house" name="house" required>
+                    <option value="">Select your house</option>
+                    <option value="Gryffindor">Gryffindor</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                    <option value="Slytherin">Slytherin</option>
+                </select>
+
+                <input type="submit" value="Access Student Account">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

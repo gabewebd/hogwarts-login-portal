@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Hogwarts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="magical-container">
+        <div class="form-header">
+            <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
+            <h1>Admin Login Portal</h1>
+            <p class="magical-text">Access your faculty dashboard</p>
+            <p>Welcome back, esteemed faculty member! Please enter your credentials to access your admin dashboard, manage your classes, review student progress, and access all faculty resources.</p>
+            <nav style="margin-top: 30px;"><a href="/" class="magical-button">Return to Hogwarts Portal</a></nav>
+        </div>
+        
+        <div class="form-content">
+            <form action="/getAdmin" method="GET">
+                <label for="adminID">Admin ID:</label>
+                <input type="text" id="adminID" name="adminID" placeholder="Enter your faculty ID" required />
+                         
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required />
+                         
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required />
+                
+                <label for="house">House Affiliation:</label>
+                <select id="house" name="house" required>
+                    <option value="">Select your house affiliation</option>
+                    <option value="Gryffindor">Gryffindor</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                    <option value="Slytherin">Slytherin</option>
+                    <option value="None">No House Affiliation</option>
+                </select>
+                         
+                <input type="submit" value="Access Faculty Dashboard">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

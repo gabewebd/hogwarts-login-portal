@@ -1,0 +1,21 @@
+{
+  "name": "hogwarts-portal",
+  "version": "1.0.0",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node express.js",
+    "dev": "node express.js"
+  },
+  "keywords": ["hogwarts", "express", "web-app"],
+  "author": "",
+  "license": "ISC",
+  "description": "Hogwarts School Portal - A magical login system",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
