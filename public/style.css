@@ -283,8 +283,8 @@ input[type="submit"]:hover {
 
 /* Hogwarts Crest */
 .hogwarts-crest {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto 25px;
     display: block;
     border-radius: 50%;
@@ -308,8 +308,8 @@ input[type="submit"]:hover {
 }
 
 .house-logo {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     object-fit: cover;
