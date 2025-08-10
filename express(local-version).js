@@ -86,7 +86,7 @@ app.get('/getStudent',(req, res) => {
                     </div>
                     
                     <nav>
-                        <a href="/studentPage" class="magical-button">Try Again</a>
+                        <a href="/studentForm" class="magical-button">Try Again</a>
                     </nav>
                 </div>
             </body>
@@ -161,7 +161,7 @@ app.get('/getAdmin',(req, res) => {
                     </div>
                     
                     <nav>
-                        <a href="/adminPage" class="magical-button">Try Again</a>
+                        <a href="/adminForm" class="magical-button">Try Again</a>
                     </nav>
                 </div>
             </body>
