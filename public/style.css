@@ -66,6 +66,10 @@ body::before {
     justify-content: center;
 }
 
+.magical-container-home {
+    padding: 35px 35px 25px 35px;
+}
+
 .form-header {
     flex: 1;
     min-width: 280px;
