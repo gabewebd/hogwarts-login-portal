@@ -296,11 +296,12 @@ input[type="submit"]:hover {
 /* Houses Section */
 .houses-section {
     margin: 25px 0;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    margin-top: 0;
     border: 1px solid rgba(255, 215, 0, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .houses-container {
