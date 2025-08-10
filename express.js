@@ -49,7 +49,7 @@ app.get('/getStudent',(req, res) => {
                 <link rel="stylesheet" href="/style.css">
             </head>
             <body class="response-page">
-                <div class="magical-container">
+                <div class="magical-container single-column">
                     <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                     <h1>Welcome Back, Student!</h1>
                     <p class="magical-text">Login Successful</p>
@@ -80,7 +80,7 @@ app.get('/getStudent',(req, res) => {
                 <link rel="stylesheet" href="/style.css">
             </head>
             <body class="response-page error-page">
-                <div class="magical-container">
+                <div class="magical-container single-column">
                     <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                     <h1>Access Denied!</h1>
                     <p class="magical-text">Student Authentication Failed</p>
@@ -124,11 +124,11 @@ app.get('/getAdmin',(req, res) => {
                 <link rel="stylesheet" href="/style.css">
             </head>
             <body class="response-page">
-                <div class="magical-container">
+                <div class="magical-container single-column">
                     <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                     <h1>Welcome Back, Admin!</h1>
                     <p class="magical-text">Faculty Login Successful</p>
-                    <p>Welcome back to your Hogwarts faculty dashboard!</p>
+                    <p>Welcome back to your Hogwarts faculty dashboard!.</p>
                     <p class="spell-text">Ready to inspire young magical minds!</p>
                     
                     <div class="registration-details">
@@ -155,7 +155,7 @@ app.get('/getAdmin',(req, res) => {
                 <link rel="stylesheet" href="/style.css">
             </head>
             <body class="response-page error-page">
-                <div class="magical-container">
+                <div class="magical-container single-column">
                     <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                     <h1>Access Denied!</h1>
                     <p class="magical-text">Faculty Authentication Failed</p>
@@ -189,7 +189,7 @@ app.use((req, res, next) => {
             <link rel="stylesheet" href="/style.css">
         </head>
         <body class="response-page error-page">
-            <div class="magical-container">
+            <div class="magical-container single-column">
                 <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
                 <h1 class="error-404">404</h1>
                 <h2>Page Not Found!</h2>
