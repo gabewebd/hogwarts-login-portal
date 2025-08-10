@@ -85,7 +85,7 @@ app.get('/getStudent',(req, res) => {
                     <h1>Access Denied!</h1>
                     <p class="magical-text">Student Authentication Failed</p>
                     <p>All student credentials are required for magical authentication!</p>
-                    <p class="spell-text">Please provide complete information to access your student dashboard.</p>
+                    <p class="spell-text">Please provide complete information.</p>
                     
                     <div class="error-details">
                         <h2>Missing Information</h2>
@@ -160,7 +160,7 @@ app.get('/getAdmin',(req, res) => {
                     <h1>Access Denied!</h1>
                     <p class="magical-text">Faculty Authentication Failed</p>
                     <p>All admin credentials are required for magical authentication!</p>
-                    <p class="spell-text">Please provide complete information to access your faculty dashboard.</p>
+                    <p class="spell-text">Please provide complete information.</p>
                     
                     <div class="error-details">
                         <h2>Missing Information</h2>
