@@ -274,6 +274,9 @@ input[type="submit"] {
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
     margin-top: 10px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 
 input[type="submit"]:hover {
