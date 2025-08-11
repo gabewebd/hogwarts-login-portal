@@ -59,7 +59,7 @@ body::before {
     margin-top: 40px; 
     animation: float 6s ease-in-out infinite;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 35px;
     text-align: left;
     padding: 35px 30px;
