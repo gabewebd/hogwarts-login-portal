@@ -18,6 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'home.html'))
 });
 
+// user
+app.get('/userForm',(req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'userForm.html'))
+});
+
 // student
 app.get('/studentForm',(req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'studentForm.html'))
@@ -29,6 +34,79 @@ app.get('/adminForm',(req, res) => {
 });
 
 // API Routes
+
+// user
+app.get('/getUser',(req, res) => {
+    var response = {
+        userID: req.query.userID,
+        firstName: req.query.firstName,
+        lastName: req.query.lastName,
+    }
+    if (response.userID && response.firstName && response.lastName) {
+        console.log("User Login: ", response);
+        res.send(`
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>User Dashboard - Hogwarts</title>
+                <link rel="stylesheet" href="/style.css">
+            </head>
+            <body class="response-page">
+                <div class="magical-container single-column">
+                    <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
+                    <h1>Welcome Back, User!</h1>
+                    <p class="magical-text">Login Successful</p>
+                    <p>Welcome back to your Hogwarts user dashboard!</p>
+                    <p class="spell-text">Your magical journey continues!</p>
+                    
+                    <div class="registration-details">
+                        <p><strong>Student ID:</strong> ${response.studentID}</p>
+                        <p><strong>Name:</strong> ${response.firstName} ${response.lastName}</p>
+                    </div>
+                    
+                    <nav>
+                        <a href="/" class="magical-button">Return to Hogwarts Portal</a>
+                    </nav>
+                </div>
+            </body>
+            </html>
+        `);
+    } else {
+        res.send(`
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Error - Hogwarts Portal</title>
+                <link rel="stylesheet" href="/style.css">
+            </head>
+            <body class="response-page error-page">
+                <div class="magical-container single-column">
+                    <img src="/images/Hogwartscrest.webp" alt="Hogwarts Crest" class="hogwarts-crest" />
+                    <h1>Access Denied!</h1>
+                    <p class="magical-text">User Authentication Failed</p>
+                    <p>All user credentials are required for magical authentication!</p>
+                    <p class="spell-text">Please provide complete information.</p>
+                    
+                    <div class="error-details">
+                        <h2>Missing Information</h2>
+                        <p>Please ensure you provide your User ID, First Name, and Last Name.</p>
+                    </div>
+                    
+                    <nav>
+                        <a href="/userForm" class="magical-button">Try Again</a>
+                    </nav>
+                </div>
+            </body>
+            </html>
+        `);
+    }
+});
+
+
 // student
 app.get('/getStudent',(req, res) => {
     var response = {
