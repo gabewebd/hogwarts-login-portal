@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Hogwarts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="magical-container single-column">
+        <div class="form-header">
+            <h1>User Login</h1>
+        </div>
+        
+        <div class="form-content">
+            <form action="/getUser" method="GET">
+                <label for="userID">User ID:</label>
+                <input type="text" id="userID" name="userID" placeholder="Enter your faculty ID" required />
+                         
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required />
+                         
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required />
+                         
+                <input type="submit" value="Access User Dashboard">
+            </form>
+        </div>
+    <nav style="margin-top: 30px;"><a href="/" class="magical-button">Return to Hogwarts Portal</a></nav>
+    </div>
+</body>
+</html>
