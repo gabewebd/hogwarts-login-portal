@@ -62,7 +62,7 @@ app.get('/getUser',(req, res) => {
                     <p class="spell-text">Your magical journey continues!</p>
                     
                     <div class="registration-details">
-                        <p><strong>Student ID:</strong> ${response.studentID}</p>
+                        <p><strong>User ID:</strong> ${response.userID}</p>
                         <p><strong>Name:</strong> ${response.firstName} ${response.lastName}</p>
                     </div>
                     
